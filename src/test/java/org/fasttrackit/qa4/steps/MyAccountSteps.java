@@ -97,7 +97,7 @@ public class MyAccountSteps {
     }
 
     @Step
-    public void enterBillingAddressCredentials(String firstName, String lastName, String streetAddress, String cityName, Integer postcode, String phoneNumber) {
+    public void enterBillingAddressCredentials(String firstName, String lastName, String streetAddress, String cityName, int postcode, String phoneNumber) {
         myAccountPage.setBillingFirstNameField(firstName);
         myAccountPage.setBillingLastNameField(lastName);
         myAccountPage.setBillingStreetAddressField(streetAddress);
@@ -117,7 +117,7 @@ public class MyAccountSteps {
     }
 
     @Step
-    public void enterShippingAddressCredentials(String firstName, String lastName, String streetAddress, String cityName, Integer postcode) {
+    public void enterShippingAddressCredentials(String firstName, String lastName, String streetAddress, String cityName, int postcode) {
         myAccountPage.setShippingFirstNameField(firstName);
         myAccountPage.setShippingLastNameField(lastName);
         myAccountPage.setShippingStreetAddressField(streetAddress);

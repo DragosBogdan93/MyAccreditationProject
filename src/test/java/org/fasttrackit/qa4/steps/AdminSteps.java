@@ -22,7 +22,7 @@ public class AdminSteps {
     }
 
     @Step
-    public void selectStars(Integer starsNumber) {
+    public void selectStars(int starsNumber) {
         productPage.selectStarsReview(starsNumber);
     }
 

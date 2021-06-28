@@ -43,7 +43,7 @@ public class CheckoutSteps {
     }
 
     @Step
-    public void enterCredentials(String firstName,String lastName,String countryName,String streetAddressName,String cityName,String stateName,Integer postcodeNumber,Long phoneNumber,String email) {
+    public void enterCredentials(String firstName,String lastName,String countryName,String streetAddressName,String cityName,String stateName,int postcodeNumber,Long phoneNumber,String email) {
         checkoutPage.setFirstNameField(firstName);
         checkoutPage.setLastNameField(lastName);
         checkoutPage.setCountryDropdown(countryName);

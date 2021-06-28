@@ -41,7 +41,7 @@ public class HomeSteps {
     }
 
     @Step
-    public void pauseFor(Integer milliseconds){
+    public void pauseFor(int milliseconds){
         homePage.pauseFor(milliseconds);
     }
 

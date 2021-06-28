@@ -37,7 +37,7 @@ public class CartSteps {
     }
 
     @Step
-    public void setNewQuantities(Integer firstQuantity, Integer secondQuantity, Integer thirdQuantity) {
+    public void setNewQuantities(int firstQuantity, int secondQuantity, int thirdQuantity) {
         cartPage.setFirstQuantityField(firstQuantity);
         cartPage.setSecondQuantityField(secondQuantity);
         cartPage.setThirdQuantityField(thirdQuantity);

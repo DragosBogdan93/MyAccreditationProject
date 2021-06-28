@@ -79,12 +79,12 @@ public class ProductSteps {
     }
 
     @Step
-    public void enterQuantity(Integer quantityValue) {
+    public void enterQuantity(int quantityValue) {
         productPage.setQuantityField(quantityValue);
     }
 
     @Step
-    public void verifyAddedToCart(Integer quantityValue, String message) {
+    public void verifyAddedToCart(int quantityValue, String message) {
         productPage.verifyAddedToCart(quantityValue, message);
     }
 }

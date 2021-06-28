@@ -94,7 +94,7 @@ public class MyAccountPage extends PageObject {
         typeInto(billingCityNameField, cityName);
     }
 
-    public void setBillingPostcodeField(Integer postcode) {
+    public void setBillingPostcodeField(int postcode) {
         typeInto(billingPostcodeField, String.valueOf(postcode));
     }
 
@@ -118,7 +118,7 @@ public class MyAccountPage extends PageObject {
         typeInto(shippingCityNameField, cityName);
     }
 
-    public void setShippingPostcodeField(Integer postcode) {
+    public void setShippingPostcodeField(int postcode) {
         typeInto(shippingPostcodeField, String.valueOf(postcode));
     }
 

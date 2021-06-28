@@ -103,7 +103,7 @@ public class CheckoutPage extends PageObject {
         typeInto(stateField, name);
     }
 
-    public void setPostcodeField(Integer number) {
+    public void setPostcodeField(int number) {
         typeInto(postcodeField, String.valueOf(number));
     }
 

@@ -3,7 +3,6 @@ package org.fasttrackit.qa4.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.serenitybdd.screenplay.actions.Clear;
 import org.openqa.selenium.By;
 import java.util.List;
 
@@ -32,18 +31,18 @@ public class CartPage extends PageObject {
     @FindBy(css = ".woocommerce-message")
     private WebElementFacade successUpdateCartMessage;
 
-    public void setFirstQuantityField(Integer firstQuantity) {
-        Clear.field(firstQuantityField);
+    public void setFirstQuantityField(int firstQuantity) {
+        firstQuantityField.clear();
         typeInto(firstQuantityField, String.valueOf(firstQuantity));
     }
 
-    public void setSecondQuantityField(Integer secondQuantity) {
-        Clear.field(secondQuantityField);
+    public void setSecondQuantityField(int secondQuantity) {
+        secondQuantityField.clear();
         typeInto(secondQuantityField, String.valueOf(secondQuantity));
     }
 
-    public void setThirdQuantityField(Integer thirdQuantity) {
-        Clear.field(thirdQuantityField);
+    public void setThirdQuantityField(int thirdQuantity) {
+        thirdQuantityField.clear();
         typeInto(thirdQuantityField, String.valueOf(thirdQuantity));
     }
 

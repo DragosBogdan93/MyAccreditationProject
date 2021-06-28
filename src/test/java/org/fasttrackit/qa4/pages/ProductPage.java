@@ -67,12 +67,12 @@ public class ProductPage extends PageObject {
     }
 
     public void setNameField(String name) {
-        Clear.field(nameField);
+        nameField.clear();
         typeInto(nameField, name);
     }
 
     public void setEmailField(String email) {
-        Clear.field(emailField);
+        emailField.clear();
         typeInto(emailField, email);
     }
 
@@ -98,8 +98,8 @@ public class ProductPage extends PageObject {
         return false;
     }
 
-    public void setQuantityField(Integer quantity) {
-        Clear.field(quantityField);
+    public void setQuantityField(int quantity) {
+        quantityField.clear();
         typeInto(quantityField, String.valueOf(quantity));
     }
 
